@@ -3,54 +3,54 @@ package cn.edu.tju.rico.stack;
 import java.util.Arrays;
 
 /**        
- * Title: Ë³ĞòÕ»    
- * Description: Êı×é×÷Îªµ×²ãÊµÏÖ
+ * Title: é¡ºåºæ ˆ    
+ * Description: æ•°ç»„ä½œä¸ºåº•å±‚å®ç°
  * @author rico       
- * @created 2017Äê4ÔÂ6ÈÕ ÏÂÎç5:27:13    
+ * @created 2017å¹´4æœˆ6æ—¥ ä¸‹åˆ5:27:13    
  */      
 public class SeqStack<E> {
 	
-	private Object[] stack;    // Ö§³ÅÊı×é
-	private int top;    // Õ»¶¥Ö¸Õë
-	private int maxSize;    // Õ»µÄ×î´óÈİÁ¿
+	private Object[] stack;    // æ”¯æ’‘æ•°ç»„
+	private int top;    // æ ˆé¡¶æŒ‡é’ˆ
+	private int maxSize;    // æ ˆçš„æœ€å¤§å®¹é‡
 	
-	// Ä¬ÈÏ¹¹Ôìº¯Êı
+	// é»˜è®¤æ„é€ å‡½æ•°
 	public SeqStack(){
 		this(10);
 	}
 	
-	// ¿ÉÒÔÖ¸¶¨ÈİÁ¿µÄ¹¹Ôìº¯Êı
+	// å¯ä»¥æŒ‡å®šå®¹é‡çš„æ„é€ å‡½æ•°
 	public SeqStack(int maxSize){
 		this.stack = new Object[maxSize];
 		this.top = -1;
 		this.maxSize = maxSize;
 	}
 	
-	// ÊÇ·ñÎª¿Õ
+	// æ˜¯å¦ä¸ºç©º
 	public boolean isEmpty(){
 		return top == -1;
 	}
 	
-	// µ¯³ö²¢É¾³ıÕ»¶¥ÔªËØ
+	// å¼¹å‡ºå¹¶åˆ é™¤æ ˆé¡¶å…ƒç´ 
 	@SuppressWarnings("unchecked")
 	public E pop() throws Exception{
 		if (top == -1) {
-			throw new Exception("Õ»Îª¿Õ...");
+			throw new Exception("æ ˆä¸ºç©º...");
 		}
 		E element = (E)stack[top];
-		stack[top --] = null;    // É¾³ı¸ÃÔªËØ
+		stack[top --] = null;    // åˆ é™¤è¯¥å…ƒç´ 
 		return element;
 	}
 	
-	// Ìí¼ÓÔªËØ
+	// æ·»åŠ å…ƒç´ 
 	public void push(E e) throws Exception{
 		if (top == maxSize -1) {
-			throw new Exception("Õ»ÒÑÂú...");
+			throw new Exception("æ ˆå·²æ»¡...");
 		}
 		stack[++top] = e;
 	}
 
-	// ´òÓ¡Õ»
+	// æ‰“å°æ ˆ
 	@Override
 	public String toString() {
 		return Arrays.toString(stack);

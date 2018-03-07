@@ -4,35 +4,35 @@ import java.util.LinkedList;
 
   
 /**        
- * Title: ½èÖúÓÚLinkedListÊµÏÖÕ»   
+ * Title: å€ŸåŠ©äºLinkedListå®ç°æ ˆ   
  * Description: 
  * @author rico       
- * @created 2017Äê4ÔÂ6ÈÕ ÏÂÎç8:25:21    
+ * @created 2017å¹´4æœˆ6æ—¥ ä¸‹åˆ8:25:21    
  */      
 public class LinkedListStack<E> {
 	
-	// Ö§³ÅList
+	// æ”¯æ’‘List
 	private LinkedList<E> stack;
 	
-	// ¹¹Ôìº¯Êı
+	// æ„é€ å‡½æ•°
 	public LinkedListStack(){
 		stack = new LinkedList<E>();
 	}
 	
-	// ÊÇ·ñÎª¿Õ
+	// æ˜¯å¦ä¸ºç©º
 	public boolean isEmpty(){
 		return stack.isEmpty();
 	}
 	
-	// Ñ¹Õ»
+	// å‹æ ˆ
 	public void push(E data){
 		stack.addFirst(data);
 	}
 	
-	//µ¯Õ»
+	//å¼¹æ ˆ
 	public E pop() throws Exception{
 		if(stack.isEmpty()){
-			throw new Exception("Õ»ÒÑÂú...");
+			throw new Exception("æ ˆå·²æ»¡...");
 		}
 		
 		return stack.pop();

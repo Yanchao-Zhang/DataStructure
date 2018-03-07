@@ -2,26 +2,26 @@ package cn.edu.tju.rico.queue;
 
   
 /**        
- * Title: »ùÓÚÁ´±íµÄ¶ÓÁĞÊµÏÖ  
- * Description: º¬Í·½áµã(Í·½áµã²»´æ´¢Öµ,Ìí¼Ó²Ù×÷O(1))£¬Î²Ö¸Õë(É¾³ı²Ù×÷O(1))
+ * Title: åŸºäºé“¾è¡¨çš„é˜Ÿåˆ—å®ç°  
+ * Description: å«å¤´ç»“ç‚¹(å¤´ç»“ç‚¹ä¸å­˜å‚¨å€¼,æ·»åŠ æ“ä½œO(1))ï¼Œå°¾æŒ‡é’ˆ(åˆ é™¤æ“ä½œO(1))
  * @author rico       
- * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:49:34    
+ * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:49:34    
  */      
     
 public class LinkedQueue<E> {
 
-	private Node<E> head;  // Í·½áµã
-	private Node<E> rear;   // Î²Ö¸Õë
-	private int size;   // ¶ÓÁĞ´óĞ¡
+	private Node<E> head;  // å¤´ç»“ç‚¹
+	private Node<E> rear;   // å°¾æŒ‡é’ˆ
+	private int size;   // é˜Ÿåˆ—å¤§å°
 	
 	public LinkedQueue(){
 		head = rear = new Node<E>(null);
 	}
 	  
 	/**     
-	 * @description Ìí¼ÓÔªËØµ½¶ÓÎ²
+	 * @description æ·»åŠ å…ƒç´ åˆ°é˜Ÿå°¾
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:52:20     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:52:20     
 	 * @param data     
 	 */
 	public void put(E data){
@@ -32,9 +32,9 @@ public class LinkedQueue<E> {
 	}
 	  
 	/**     
-	 * @description É¾³ı¶ÓÍ·²¢·µ»Ø¶ÓÍ·ÔªËØµÄÖµ
+	 * @description åˆ é™¤é˜Ÿå¤´å¹¶è¿”å›é˜Ÿå¤´å…ƒç´ çš„å€¼
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:52:24     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:52:24     
 	 * @return     
 	 */
 	public E pop(){
@@ -53,9 +53,9 @@ public class LinkedQueue<E> {
 	}
 	  
 	/**     
-	 * @description ·µ»Ø¶ÓÍ·ÔªËØµÄÖµ
+	 * @description è¿”å›é˜Ÿå¤´å…ƒç´ çš„å€¼
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:52:28     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:52:28     
 	 * @return     
 	 */
 	public E peek() {
@@ -67,9 +67,9 @@ public class LinkedQueue<E> {
 	
 	  
 	/**     
-	 * @description ¶ÓÁĞÊÇ·ñÎª¿Õ
+	 * @description é˜Ÿåˆ—æ˜¯å¦ä¸ºç©º
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:52:33     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:52:33     
 	 * @return     
 	 */
 	public boolean isEmpty(){
@@ -78,9 +78,9 @@ public class LinkedQueue<E> {
 	
 	  
 	/**     
-	 * @description ¶ÓÁĞ´óĞ¡
+	 * @description é˜Ÿåˆ—å¤§å°
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:52:35     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:52:35     
 	 * @return     
 	 */
 	public int size() {

@@ -1,30 +1,30 @@
 package cn.edu.tju.rico.tree;
 
 /**
- * Title: ½áµãÀà 
- * Description: ¶ş²æÊ÷µÄ½áµã
+ * Title: ç»“ç‚¹ç±» 
+ * Description: äºŒå‰æ ‘çš„ç»“ç‚¹
  * 
  * @author rico
- * @created 2017Äê4ÔÂ6ÈÕ ÏÂÎç9:55:58
+ * @created 2017å¹´4æœˆ6æ—¥ ä¸‹åˆ9:55:58
  */
  public class Node<T> {
 
-	T data;   // ½áµãÊı¾İ
-	Node<T> left;  // Ö¸Ïò×óº¢×Ó½áµã
-	Node<T> right;  // Ö¸ÏòÓÒº¢×Ó½áµã
-	boolean isFirst;  // ÓÃÓÚ·Çµİ¹éºóĞò±éÀú
+	T data;   // ç»“ç‚¹æ•°æ®
+	Node<T> left;  // æŒ‡å‘å·¦å­©å­ç»“ç‚¹
+	Node<T> right;  // æŒ‡å‘å³å­©å­ç»“ç‚¹
+	boolean isFirst;  // ç”¨äºéé€’å½’ååºéå†
 	
 	
 	/**
-	 * ¹¹Ôìº¯Êı
+	 * æ„é€ å‡½æ•°
 	 * 
-	 * @description ¹¹ÔìÒ»¸öĞÂ½áµã
+	 * @description æ„é€ ä¸€ä¸ªæ–°ç»“ç‚¹
 	 * @author rico
-	 * @created 2017Äê4ÔÂ6ÈÕ ÏÂÎç9:56:56
+	 * @created 2017å¹´4æœˆ6æ—¥ ä¸‹åˆ9:56:56
 	 * @param data
-	 *            ĞÂÔªËØÊı¾İ
+	 *            æ–°å…ƒç´ æ•°æ®
 	 * @param next
-	 *            ĞÂÔªËØÓëÁ´±í½áºÏ½áµã
+	 *            æ–°å…ƒç´ ä¸é“¾è¡¨ç»“åˆç»“ç‚¹
 	 */
 	public Node(T data) { 
 		this.data = data;

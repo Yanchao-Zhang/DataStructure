@@ -4,7 +4,7 @@ import java.util.Comparator;
 import cn.edu.tju.rico.stack.LinkedStack;
   
 public class LinkedStackTest {
-	// ²âÊÔ
+	// æµ‹è¯•
 	public static void main(String[] args) throws Exception {
 		
 		LinkedStack<Integer> stack = new LinkedStack<Integer>();
@@ -27,19 +27,19 @@ public class LinkedStackTest {
 		stack.push(5,c);
 		stack.push(3,c);
 		
-		System.out.println("Ô­Õ»(×î×ó±ßÔªËØÊÇÕ»¶¥ÔªËØ)£º");
+		System.out.println("åŸæ ˆ(æœ€å·¦è¾¹å…ƒç´ æ˜¯æ ˆé¡¶å…ƒç´ )ï¼š");
 		stack.print();
 		System.out.println();
 		
-		System.out.println("µ¯³öÕ»¶¥ÔªËØ£º");
+		System.out.println("å¼¹å‡ºæ ˆé¡¶å…ƒç´ ï¼š");
 		System.out.println(stack.peek());
-		System.out.println("Õ»ÖĞµÄ×îĞ¡Öµ£º" + stack.min());
+		System.out.println("æ ˆä¸­çš„æœ€å°å€¼ï¼š" + stack.min());
 		System.out.println();
 
-		System.out.println("µ¯³ö²¢É¾³ıÕ»¶¥ÔªËØºóµÄÁ´±í£º");
+		System.out.println("å¼¹å‡ºå¹¶åˆ é™¤æ ˆé¡¶å…ƒç´ åçš„é“¾è¡¨ï¼š");
 		stack.pop(c);
 		stack.print();
-		System.out.println("Õ»ÖĞµÄ×îĞ¡Öµ£º" + stack.min());
+		System.out.println("æ ˆä¸­çš„æœ€å°å€¼ï¼š" + stack.min());
 		System.out.println();
 	}
 }

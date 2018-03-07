@@ -1,27 +1,27 @@
 package cn.edu.tju.rico.stack;
 
 /**
- * Title: ½áµãÀà 
- * Description: Á´±íµÄ»ù±¾ÔªËØ
+ * Title: ç»“ç‚¹ç±» 
+ * Description: é“¾è¡¨çš„åŸºæœ¬å…ƒç´ 
  * 
  * @author rico
- * @created 2017Äê4ÔÂ6ÈÕ ÏÂÎç9:55:58
+ * @created 2017å¹´4æœˆ6æ—¥ ä¸‹åˆ9:55:58
  */
  public class Node<T> {
-	//°ü¿É¼ûĞÔ
+	//åŒ…å¯è§æ€§
 	Node<T> next;   
 	T data;
 
 	/**
-	 * ¹¹Ôìº¯Êı
+	 * æ„é€ å‡½æ•°
 	 * 
-	 * @description ¹¹ÔìÒ»¸öĞÂ½Úµã
+	 * @description æ„é€ ä¸€ä¸ªæ–°èŠ‚ç‚¹
 	 * @author rico
-	 * @created 2017Äê4ÔÂ6ÈÕ ÏÂÎç9:56:56
+	 * @created 2017å¹´4æœˆ6æ—¥ ä¸‹åˆ9:56:56
 	 * @param data
-	 *            ĞÂÔªËØÊı¾İ
+	 *            æ–°å…ƒç´ æ•°æ®
 	 * @param next
-	 *            ĞÂÔªËØÓëÁ´±í½áºÏ½Úµã
+	 *            æ–°å…ƒç´ ä¸é“¾è¡¨ç»“åˆèŠ‚ç‚¹
 	 */
 	public Node(T data) { 
 		this.data = data;

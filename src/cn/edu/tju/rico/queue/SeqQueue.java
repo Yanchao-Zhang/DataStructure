@@ -4,18 +4,18 @@ import java.util.Arrays;
 
   
 /**        
- * Title: »ùÓÚÊı×éµÄ¶ÓÁĞÊµÏÖ     
+ * Title: åŸºäºæ•°ç»„çš„é˜Ÿåˆ—å®ç°     
  * Description: 
  * @author rico       
- * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:23:55    
+ * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:23:55    
  */      
 public class SeqQueue<E> {
 
 	
-	/**  ¶ÓÁĞµÄ´æ´¢½á¹¹   (@author: rico) */      
+	/**  é˜Ÿåˆ—çš„å­˜å‚¨ç»“æ„   (@author: rico) */      
 	private Object[] queue;         
 	private int size;
-	private int maxSize;    // ×î´óÈİÁ¿
+	private int maxSize;    // æœ€å¤§å®¹é‡
 	
 	public SeqQueue(int maxSize){
 		this.maxSize = maxSize;
@@ -24,9 +24,9 @@ public class SeqQueue<E> {
 	
 	  
 	/**     
-	 * @description Ìí¼ÓÔªËØµ½¶ÓÎ²
+	 * @description æ·»åŠ å…ƒç´ åˆ°é˜Ÿå°¾
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:25:32     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:25:32     
 	 * @param data     
 	 */
 	public void put(E data){
@@ -38,9 +38,9 @@ public class SeqQueue<E> {
 	
 	  
 	/**     
-	 * @description É¾³ı¶ÓÍ·²¢·µ»Ø¶ÓÍ·ÔªËØµÄÖµ
+	 * @description åˆ é™¤é˜Ÿå¤´å¹¶è¿”å›é˜Ÿå¤´å…ƒç´ çš„å€¼
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:25:47     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:25:47     
 	 * @return     
 	 */
 	public E pop(){
@@ -58,9 +58,9 @@ public class SeqQueue<E> {
 	
 	  
 	/**     
-	 * @description ·µ»Ø¶ÓÍ·ÔªËØ
+	 * @description è¿”å›é˜Ÿå¤´å…ƒç´ 
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:26:01     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:26:01     
 	 * @return     
 	 */
 	public E peek(){
@@ -72,9 +72,9 @@ public class SeqQueue<E> {
 	
 	  
 	/**     
-	 * @description ¶ÓÁĞÊÇ·ñÒÑÂú
+	 * @description é˜Ÿåˆ—æ˜¯å¦å·²æ»¡
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:26:14     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:26:14     
 	 * @return     
 	 */
 	public boolean isFull(){
@@ -83,9 +83,9 @@ public class SeqQueue<E> {
 	
 	  
 	/**     
-	 * @description ¶ÓÁĞÊÇ·ñÎª¿Õ
+	 * @description é˜Ÿåˆ—æ˜¯å¦ä¸ºç©º
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:26:25     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:26:25     
 	 * @return     
 	 */
 	public boolean isEmpty(){
@@ -94,9 +94,9 @@ public class SeqQueue<E> {
 	
 	  
 	/**     
-	 * @description ¶ÓÁĞµÄ´óĞ¡
+	 * @description é˜Ÿåˆ—çš„å¤§å°
 	 * @author rico       
-	 * @created 2017Äê5ÔÂ19ÈÕ ÏÂÎç8:26:34     
+	 * @created 2017å¹´5æœˆ19æ—¥ ä¸‹åˆ8:26:34     
 	 * @return     
 	 */
 	public int size(){

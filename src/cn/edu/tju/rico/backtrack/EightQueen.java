@@ -4,20 +4,20 @@ import java.util.Arrays;
 import java.util.Date;
 
 /**
- * Title: °Ë»ÊºóÎÊÌâ(µİ¹éËã·¨) Description: ÔÚ8¡Á8¸ñµÄ¹ú¼ÊÏóÆåÉÏ°Ú·Å°Ë¸ö»Êºó£¬Ê¹Æä²»ÄÜ»¥Ïà¹¥»÷£¬
- * ¼´ÈÎÒâÁ½¸ö»Êºó¶¼²»ÄÜ´¦ÓÚÍ¬Ò»ĞĞ¡¢Í¬Ò»ÁĞ»òÍ¬Ò»Ğ±ÏßÉÏ£¬ÎÊÓĞ¶àÉÙÖÖ°Ú·¨¡£
+ * Title: å…«çš‡åé—®é¢˜(é€’å½’ç®—æ³•) Description: åœ¨8Ã—8æ ¼çš„å›½é™…è±¡æ£‹ä¸Šæ‘†æ”¾å…«ä¸ªçš‡åï¼Œä½¿å…¶ä¸èƒ½äº’ç›¸æ”»å‡»ï¼Œ
+ * å³ä»»æ„ä¸¤ä¸ªçš‡åéƒ½ä¸èƒ½å¤„äºåŒä¸€è¡Œã€åŒä¸€åˆ—æˆ–åŒä¸€æ–œçº¿ä¸Šï¼Œé—®æœ‰å¤šå°‘ç§æ‘†æ³•ã€‚
  * 
  * @author rico
- * @created 2017Äê5ÔÂ31ÈÕ ÏÂÎç4:54:17
+ * @created 2017å¹´5æœˆ31æ—¥ ä¸‹åˆ4:54:17
  */
 public class EightQueen {
 
-	private static final short N = 8; // Ê¹ÓÃ³£Á¿À´¶¨Òå£¬·½±ãÖ®ºó½âN»ÊºóÎÊÌâ
-	private static int count = 0; // ½á¹û¼ÆÊıÆ÷
+	private static final short N = 8; // ä½¿ç”¨å¸¸é‡æ¥å®šä¹‰ï¼Œæ–¹ä¾¿ä¹‹åè§£Nçš‡åé—®é¢˜
+	private static int count = 0; // ç»“æœè®¡æ•°å™¨
 
 	public static void main(String[] args) {
 		Date begin = new Date();
-		// ³õÊ¼»¯ÆåÅÌ£¬È«²¿ÖÃ0
+		// åˆå§‹åŒ–æ£‹ç›˜ï¼Œå…¨éƒ¨ç½®0
 		short chess[][] = new short[N][N];
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
@@ -27,16 +27,16 @@ public class EightQueen {
 
 		putQueenAtRow(chess, 0);
 		Date end = new Date();
-		System.out.println("½â¾ö " + N + " »ÊºóÎÊÌâ£¬ÓÃÊ±£º"
-				+ String.valueOf(end.getTime() - begin.getTime()) + "ºÁÃë£¬¼ÆËã½á¹û£º"
+		System.out.println("è§£å†³ " + N + " çš‡åé—®é¢˜ï¼Œç”¨æ—¶ï¼š"
+				+ String.valueOf(end.getTime() - begin.getTime()) + "æ¯«ç§’ï¼Œè®¡ç®—ç»“æœï¼š"
 				+ count);
 	}
 
 	private static void putQueenAtRow(short[][] chess, int row) {
-		// µİ¹éÖÕÖ¹ÅĞ¶Ï£ºÈç¹ûrow==N£¬ÔòËµÃ÷ÒÑ¾­³É¹¦°Ú·ÅÁË8¸ö»Êºó Êä³ö½á¹û£¬ÖÕÖ¹µİ¹é
+		// é€’å½’ç»ˆæ­¢åˆ¤æ–­ï¼šå¦‚æœrow==Nï¼Œåˆ™è¯´æ˜å·²ç»æˆåŠŸæ‘†æ”¾äº†8ä¸ªçš‡å è¾“å‡ºç»“æœï¼Œç»ˆæ­¢é€’å½’
 		if (row == N) {
 			count++;
-			System.out.println("µÚ " + count + " ÖÖ½â£º");
+			System.out.println("ç¬¬ " + count + " ç§è§£ï¼š");
 			for (int i = 0; i < N; i++) {
 				for (int j = 0; j < N; j++) {
 					System.out.print(chess[i][j] + " ");
@@ -49,10 +49,10 @@ public class EightQueen {
 		short[][] chessTemp = chess.clone();
 
 		/**
-		 * ÏòÕâÒ»ĞĞµÄÃ¿Ò»¸öÎ»ÖÃ³¢ÊÔÅÅ·Å»Êºó È»ºó¼ì²â×´Ì¬£¬Èç¹û°²È«Ôò¼ÌĞøÖ´ĞĞµİ¹éº¯Êı°Ú·ÅÏÂÒ»ĞĞ»Êºó
+		 * å‘è¿™ä¸€è¡Œçš„æ¯ä¸€ä¸ªä½ç½®å°è¯•æ’æ”¾çš‡å ç„¶åæ£€æµ‹çŠ¶æ€ï¼Œå¦‚æœå®‰å…¨åˆ™ç»§ç»­æ‰§è¡Œé€’å½’å‡½æ•°æ‘†æ”¾ä¸‹ä¸€è¡Œçš‡å
 		 */
 		for (int i = 0; i < N; i++) {
-			// °Ú·ÅÕâÒ»ĞĞµÄ»Êºó£¬Ö®Ç°ÒªÇåµôËùÓĞÕâÒ»ĞĞ°Ú·ÅµÄ¼ÇÂ¼£¬·ÀÖ¹ÎÛÈ¾ÆåÅÌ
+			// æ‘†æ”¾è¿™ä¸€è¡Œçš„çš‡åï¼Œä¹‹å‰è¦æ¸…æ‰æ‰€æœ‰è¿™ä¸€è¡Œæ‘†æ”¾çš„è®°å½•ï¼Œé˜²æ­¢æ±¡æŸ“æ£‹ç›˜
 			for (int j = 0; j < N; j++)
 				chessTemp[row][j] = 0;
 			
@@ -72,14 +72,14 @@ public class EightQueen {
 	}
 
 	private static boolean isSafety(short[][] chess, int row, int col) {
-		// ÅĞ¶ÏÖĞÉÏ¡¢×óÉÏ¡¢ÓÒÉÏÊÇ·ñ°²È«
+		// åˆ¤æ–­ä¸­ä¸Šã€å·¦ä¸Šã€å³ä¸Šæ˜¯å¦å®‰å…¨
 		int step = 1;
 		while (row - step >= 0) {
-			if (chess[row - step][col] == 1) // ÖĞÉÏ
+			if (chess[row - step][col] == 1) // ä¸­ä¸Š
 				return false;
-			if (col - step >= 0 && chess[row - step][col - step] == 1) // ×óÉÏ
+			if (col - step >= 0 && chess[row - step][col - step] == 1) // å·¦ä¸Š
 				return false;
-			if (col + step < N && chess[row - step][col + step] == 1) // ÓÒÉÏ
+			if (col + step < N && chess[row - step][col + step] == 1) // å³ä¸Š
 				return false;
 
 			step++;

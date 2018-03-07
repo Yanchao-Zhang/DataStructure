@@ -4,23 +4,23 @@ import java.util.Arrays;
 
   
 /**        
- * Title:¿ìËÙÅÅĞòµÄ±äĞÎ     
- * Description: ±¾ÖÊÉÏ²»¶Ïµ÷ÓÃ¾­µä¿ìÅÅµÄ»®·ÖËã·¨
- * Ê±¼ä¸´ÔÓ¶È£ºO(n^2)
+ * Title:å¿«é€Ÿæ’åºçš„å˜å½¢     
+ * Description: æœ¬è´¨ä¸Šä¸æ–­è°ƒç”¨ç»å…¸å¿«æ’çš„åˆ’åˆ†ç®—æ³•
+ * æ—¶é—´å¤æ‚åº¦ï¼šO(n^2)
  * @author rico       
- * @created 2017Äê6ÔÂ2ÈÕ ÏÂÎç9:10:43    
+ * @created 2017å¹´6æœˆ2æ—¥ ä¸‹åˆ9:10:43    
  */      
 public class QuickSort_PartitionOnly {
 	/**     
-	 * @description ÒÀ´ÎÒÔÊı×éÖĞµÄÃ¿¸öÔªËØÎª»ù×¼µã½øĞĞ»®·Ö£¬
-	 * Ö±µ½±éÀúËùÓĞÔªËØ¶¼
+	 * @description ä¾æ¬¡ä»¥æ•°ç»„ä¸­çš„æ¯ä¸ªå…ƒç´ ä¸ºåŸºå‡†ç‚¹è¿›è¡Œåˆ’åˆ†ï¼Œ
+	 * ç›´åˆ°éå†æ‰€æœ‰å…ƒç´ éƒ½
 	 * @author rico       
 	 * @param array     
 	 */
 	public void quicksort(int[] array) {
 		if (array != null && array.length != 0) {
 			for (int i = 0; i < array.length; i++) {
-				// ÒÔÏÂÊÇ¿ìÅÅµÄ»®·ÖËã·¨
+				// ä»¥ä¸‹æ˜¯å¿«æ’çš„åˆ’åˆ†ç®—æ³•
 				int base_index = 0; 
 				int base = array[i];
 				base_index = i;
